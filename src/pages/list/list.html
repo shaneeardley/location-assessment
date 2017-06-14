@@ -1,18 +1,52 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Contact
+      List
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  i am a list
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-left></ion-icon>
-      @ionicframework
+
+  <ion-list *ngIf="locations">
+    <ion-item *ngFor="let item of locations">
+      
+      <h2>{{item.name}}</h2>
+      <h3>{{item.rating}}</h3>
+      <p>{{item.KilometersAway}}{{distanceType}} away</p>
     </ion-item>
   </ion-list>
+
+  <div padding>
+  <ion-segment [(ngModel)]="pet">
+    <ion-segment-button value="kittens">
+      Kittens
+    </ion-segment-button>
+    <ion-segment-button value="puppies">
+      Puppies
+    </ion-segment-button>
+  </ion-segment>
+</div>
+
+<div [ngSwitch]="pet">
+  <ion-list *ngSwitchCase="'puppies'">
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="img/thumbnail-puppy-1.jpg">
+      </ion-thumbnail>
+      <h2>Ruby</h2>
+    </ion-item>
+    ...
+  </ion-list>
+
+  <ion-list *ngSwitchCase="'kittens'">
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="img/thumbnail-kitten-1.jpg">
+      </ion-thumbnail>
+      <h2>Luna</h2>
+    </ion-item>
+    ...
+  </ion-list>
+</div>
 </ion-content>
