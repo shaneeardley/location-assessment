@@ -26,11 +26,12 @@ export class MyApp {
       this.storage.set('currentPosition', myPosition);
       this.http.get('assets/locations.json').map(res => { return res.json() }).subscribe((res: Location[]) => {
         res.forEach(r => {
+          debugger;
           r.Lattitude = Number(r.latlong.split(',')[0].trim());
           r.Longitude = Number(r.latlong.split(',')[1].trim());
-          r.KilometersAway = this.LocationService.getKMDistance(myPosition, r);
-          r.MetersAway = this.LocationService.GetDistanceBetween(myPosition, r);
-          r.MilesAway = this.LocationService.getMileDistance(myPosition, r);
+          r.KilometersAway = Number(this.LocationService.getKMDistance(myPosition, r).toFixed(2));
+          r.MetersAway = Number(this.LocationService.GetDistanceBetween(myPosition, r).toFixed(2));
+          r.MilesAway = Number(this.LocationService.getMileDistance(myPosition, r).toFixed(2));
         });
         this.storage.set('itemLocations', res);
         this.initializeApp();

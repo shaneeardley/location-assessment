@@ -9,7 +9,7 @@ export class LocationService {
         let from = new google.maps.LatLng(myPosition.Lattitude, myPosition.Longitude);
         let to = new google.maps.LatLng(selLocation.Lattitude, selLocation.Longitude);
         let dist = google.maps.geometry.spherical.computeDistanceBetween(from, to);
-        return dist.toFixed(1);
+        return dist;
     }
     getKMDistance(myPosition: Position, selLocation: Location) {
         return this.GetDistanceBetween(myPosition, selLocation) / 1000;

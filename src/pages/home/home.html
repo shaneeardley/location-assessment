@@ -4,15 +4,19 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  put some cards here, picture of a 'map' and a 'list' to display where you are going 
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
-</ion-content>
+<<ion-content class="card-background-page">
+
+
+
+  <ion-card (click)="viewList()">
+    <img src="assets/list.jpg" />
+    <div class="card-title">List View</div>
+    <div class="card-subtitle">click to view list</div>
+  </ion-card>
+  <ion-card (click)="viewMap()">
+    <img src="assets/map.jpg" />
+    <div class="card-title">Map View</div>
+    <div class="card-subtitle">click to view map</div>
+    
+  </ion-card>
+  </ion-content>

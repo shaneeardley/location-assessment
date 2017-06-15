@@ -1,5 +1,5 @@
-export enum DistanceType{
-    Km=0,
-    m=1,
-    Mi=2
+export enum DistanceType {
+    Km = 0,
+    Mi = 1,
+    m = 2
 }
