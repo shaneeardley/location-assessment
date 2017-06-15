@@ -1,26 +1,17 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+This is my completed location assessment
 
-## How to use this template
+# How to use this project on your pc
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+* ensure that you have  ionic, git and npm installed on your machine *
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+How to use this project: 
+* clone it from GitHub (git clone https://github.com/shaneeardley/location-assessment.git)
+* run npm install in the directory (npm i)
+* serve the project using ionic
+* browse to the project in your browser ([http://localhost:8100/ionic-lab](http://localhost:8100/ionic-lab))
 
-### With the Ionic CLI:
-
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
-
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myTabs tabs
-```
-
-Then, to run it, cd into `myTabs` and run:
-
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
-
-Substitute ios for android if not on a Mac.
-
+# How to use this project on your phone 
+* install Ionic View from your relevant app store (note, this has only been tested on an iPhone, but should work on an android)
+* Launch Ionic View
+* Click on Preview Shared App(the eye in the corner) and use the id of "bbd28719"
+* Launch the app (location-assessment)

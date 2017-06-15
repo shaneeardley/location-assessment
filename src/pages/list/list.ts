@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { Position } from '../../classes/position';
 import { Location } from '../../classes/location';
 import { Storage } from '@ionic/storage';
 import { DistanceType } from '../../enums/distance-type';
