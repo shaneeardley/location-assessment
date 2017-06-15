@@ -8,15 +8,19 @@
 
 
 
-  <ion-card (click)="viewList()">
-    <img src="assets/list.jpg" />
+  <ion-card >
+    <img src="assets/list.jpg"/>
     <div class="card-title">List View</div>
-    <div class="card-subtitle">click to view list</div>
+    <div class="card-subtitle">
+      <button ion-button  color="dark"  (click)="viewList()">View List</button>
+      </div>
   </ion-card>
-  <ion-card (click)="viewMap()">
-    <img src="assets/map.jpg" />
+  <ion-card  >
+    <img src="assets/map.jpg"  />
     <div class="card-title">Map View</div>
-    <div class="card-subtitle">click to view map</div>
+    <div class="card-subtitle">
+      <button ion-button  color="dark"   (click)="viewMap()">View Map</button>
+    </div>
     
   </ion-card>
   </ion-content>

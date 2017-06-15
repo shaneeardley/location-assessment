@@ -14,5 +14,5 @@ How to use this project:
 
 * install Ionic View from your relevant app store (note, this has only been tested on an iPhone, but should work on an android)
 * Launch Ionic View
-* Click on Preview Shared App(the eye in the corner) and use the id of "bbd28719"
+* Click on Preview Shared App(the eye in the corner) and use the id of "c02cc488"
 * Launch the app (location-assessment)
